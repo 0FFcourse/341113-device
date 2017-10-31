@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Roman Cours](https://up.htmlacademy.ru/htmlcss/19/user/341113).
-* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
+* Наставник: [Дмитрий Мальнев](https://up.htmlacademy.ru/htmlcss/19/user/86681).
 
 ---
 
