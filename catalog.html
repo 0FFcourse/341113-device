@@ -45,14 +45,59 @@
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter input checkbox" type="checkbox" name="black" id="filter-black">
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter input checkbox" type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter input checkbox" type="checkbox" name="blue" id="filter-blue">
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter input checkbox" type="checkbox" name="red" id="filter-red">
+                <label for="filter-red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter input checkbox" type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter input radio" type="radio" name="bluetooth-group" value="bluetooth-yes" id="bluetooth-yes-id">
+                <label for="bluetooth-yes-id">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter input radio" type="radio" name="bluetooth-group" value="bluetooth-no" id="bluetooth-no-id">
+                <label for="bluetooth-no-id">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2>Сортировка:</h2>
         <button class="price">По цене</button>
         <button class="type">По типу</button>
         <button class="popularity">По популярности</button>
-        <!-- Здесь будет переключатель -->
+        <button class="up" disabled>Лучшее в конце</button>
+        <button class="down">Сначала лудшее</button>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>Любительская селфи-палка</h3>
