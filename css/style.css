@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('gilroy-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +20,6 @@ body {
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
     color: #000;
     text-transform: none;
 
@@ -22,6 +28,17 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.visually-hidden { 
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .main-header {
@@ -146,8 +163,6 @@ a {
     letter-spacing: 0.2em;
     color: #000;
     text-transform: uppercase;
-
-    background-size: 200%;
 }
 
 .button::before {
@@ -177,4 +192,56 @@ a {
 
 .button:active {
     color: #a88a20;
+}
+
+.characteristics td:first-child {
+    font-family: 'Gilroy Light', sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+}
+
+.characteristics td:last-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
+.sections {
+    list-style: none;
+}
+
+.sections p:first-child {
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+    display: flex;
+    position: relative;
+}
+
+.sections p:last-child {
+    color: #000;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+
+.section img {
+    margin: auto;
+}
+
+.fix {
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+}
+
+ .section:hover p:first-child {
+    background-color: #f0c52e;
+}
+
+.section:active img,
+.section:active p:last-child {
+    opacity: 0.3;
 }
