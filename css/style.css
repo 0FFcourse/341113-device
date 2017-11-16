@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroy-extrabold.woff2') format('woff2'),
+         url('gilroy-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'gilroyextrabold', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000;
+    text-transform: none;
+
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #f7e296;
+}
+
+.main-search a {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.main-search a:hover {
+    opacity: 0.6;
+}
+
+.main-search a:active {
+    opacity: 0.3;
+}
+
+.main-search input[type="search"] {
+    font: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+
+    background-color: transparent;
+    border: none;
+}
+
+.main-search input[type="search"]::placeholder {
+    color: #000;
+    opacity: 0.3;
+}
+
+.main-search input[type="search"]:hover::placeholder {
+    opacity: 0.6;
+}
+
+.main-search input[type="search"]:focus::placeholder {
+    opacity: 1;
+    border-bottom: 2px solid #000;
+}
+
+.user-functions,
+.main-navigation,
+.navigation {
+    list-style: none;
+}
+
+.user-functions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+}
+
+.main-navigation {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.navigation a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+}
+
+.user-functions a,
+.main-navigation a,
+.navigation a {
+    color: #000;
+}
+
+.user-functions a:hover,
+.main-navigation a:hover,
+.navigation a:hover {
+    opacity: 0.6;
+}
+
+.user-functions a:active,
+.main-navigation a:active,
+.navigation a:active {
+    opacity: 0.3;
+}
