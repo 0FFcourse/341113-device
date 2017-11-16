@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
+
   <body>
+
     <header class="main-header">
       <div class="main-search">
         <span>Device</span>
@@ -36,13 +39,17 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </header>
+
     <main>
+
       <h1 class="page-title">Моноподы для селфи</h1>
+
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="current"><a>Моноподы для селфи</a></li>
       </ul>
+
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -91,13 +98,14 @@
           <button type="submit" class="filter button">Показать</button>
         </form>
       </section>
+
       <section class="catalog">
         <h2>Сортировка:</h2>
-        <button class="price">По цене</button>
-        <button class="type">По типу</button>
-        <button class="popularity">По популярности</button>
-        <button class="up" disabled>Лучшее в конце</button>
-        <button class="down">Сначала лудшее</button>
+        <a class="price" href="#">По цене</a>
+        <a class="type" href="#">По типу</a>
+        <a class="popularity" href="#">По популярности</a>
+        <a class="up">Лучшее в конце</a>
+        <a class="down" href="#">Сначала лудшее</a>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>Любительская селфи-палка</h3>
@@ -138,7 +146,9 @@
           <li><a href="#">вперед</a></li>
         </ul>
       </section>
+
     </main>
+
     <footer class="main-footer">
       <div class="divice-address">
         <span>Device</span>
@@ -164,10 +174,12 @@
         <img src="img/logo-html.svg" alt="html Academy" width="27" height="35">
       </div>
     </footer>
+
     <section class="item-hover">
       <h2>Взаимодействие с товаром</h2>
       <button class="take-item">В корзину</button>
       <a href="#">Добавить к сравнению</a>
     </section>
+    
   </body>
 </html>
