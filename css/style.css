@@ -128,7 +128,8 @@ a {
 
 .user-functions-main a:active,
 .main-navigation a:active,
-.navigation a:active {
+.navigation a:active,
+.user-functions-main .exit {
     opacity: 0.3;
 }
 
@@ -510,7 +511,7 @@ a {
     width: 360px;
     height: 50px;
     
-    font-family: 'open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 18px;
     
@@ -554,4 +555,132 @@ a {
 
 .button-submit:hover::before {
     width: 200px;
+}
+
+.page-title {
+    font-size: 47px;
+    letter-spacing: 0.01em;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    
+    opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+    opacity: 0.1;
+}
+
+.filters h2 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    background-color: #dcdcdc;
+}
+
+.filter {
+    background-color: #efefef;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+
+.color-selection,
+.bluetooth-on-off {
+    font-family: 'Opne Sans', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+
+    list-style: none;
+}
+
+.filter button {
+    font-family: inherit;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    border: none;
+
+    z-index: 1;
+}
+
+.filter button::before {
+    top: 6px;
+    width: 200px;
+}
+
+.filter button:hover::before {
+    width: 200px;
+}
+
+.sorting {
+    background-color: #efefef;
+}
+
+.sorting span {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.sorting a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+
+    opacity: 0.3;
+}
+
+.sorting a:hover {
+    opacity: 0.6;
+}
+
+.sorting a:active {
+    opacity: 1;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.next-or-back {
+    background-color: #ebebeb;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-list a {
+    font-size: 16px;
+    letter-spacing: 0.2;
+    color: #000;
+
+    opacity: 0.3;
+}
+
+.pagination-list a:hover {
+    opacity: 0.6;
+}
+
+.pagination-list a:active {
+    opacity: 1;
 }
