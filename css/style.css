@@ -1,19 +1,25 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroy-extrabold.woff2') format('woff2'),
-         url('gilroy-extrabold.woff') format('woff');
+    src: url('../fonts/gilroy-extrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy Light';
-    src: url('gilroy-light.woff') format('woff');
+    src: url('../fonts/gilroy-light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
-body {
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
     margin: 0;
     padding: 0;
 
@@ -63,7 +69,7 @@ a {
 
 .main-search input[type='search'] {
     font: inherit;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -93,7 +99,7 @@ a {
 }
 
 .user-functions-main {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -107,7 +113,7 @@ a {
 }
 
 .navigation a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -150,7 +156,7 @@ a {
 }
 
 .item p:nth-of-type(3) {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -203,7 +209,7 @@ a {
 }
 
 .characteristics td:last-child {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.01em;
@@ -287,7 +293,7 @@ a {
 }
 
 .description p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -341,7 +347,7 @@ a {
 }
 
 .about-us p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
 }
@@ -361,7 +367,7 @@ a {
 }
 
 .contacts p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
 }
@@ -408,7 +414,7 @@ a {
 }
 
 .divice-address p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #fff;
@@ -470,7 +476,7 @@ a {
 }
 
 .user-functions a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -488,7 +494,7 @@ a {
 }
 
 .info p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #fff;
@@ -511,7 +517,7 @@ a {
     width: 360px;
     height: 50px;
     
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 14px;
     line-height: 18px;
     
@@ -567,7 +573,7 @@ a {
 }
 
 .breadcrumbs a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     color: #000;
     
     opacity: 0.3;
@@ -641,7 +647,7 @@ a {
 }
 
 .sorting a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sanslight', sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #000;
