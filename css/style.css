@@ -54,7 +54,7 @@ a {
 .main-search a {
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
     color: #000;
     text-transform: uppercase;
 }
@@ -72,7 +72,7 @@ a {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 
     background-color: transparent;
     border: none;
@@ -94,7 +94,8 @@ a {
 
 .user-functions-main,
 .main-navigation,
-.navigation {
+.navigation,
+.user-functions-list {
     list-style: none;
 }
 
@@ -102,10 +103,11 @@ a {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
-.main-navigation {
+.main-navigation,
+.user-functions-list {
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.2em;
@@ -116,13 +118,14 @@ a {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
     text-transform: none;
 }
 
 .user-functions-main a,
 .main-navigation a,
-.navigation a {
+.navigation a,
+.user-functions-list a {
     color: #000;
 }
 
@@ -142,7 +145,7 @@ a {
 .number {
     font-size: 179.2px;
     line-height: 179.2px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .items {
@@ -152,14 +155,14 @@ a {
 .item p:nth-of-type(2) {
     font-size: 47px;
     line-height: 56px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .item p:nth-of-type(3) {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .button {
@@ -201,18 +204,18 @@ a {
     color: #a88a20;
 }
 
-.characteristics td:first-child {
+.characteristics tr:first-child {
     font-family: 'Gilroy Light', sans-serif;
     font-size: 36px;
     line-height: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
-.characteristics td:last-child {
+.characteristics tr:last-child {
     font-family: 'open_sanslight', sans-serif;
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .sections {
@@ -231,7 +234,7 @@ a {
     color: #000;
     font-size: 18px;
     line-height: 18px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .section img {
@@ -289,14 +292,14 @@ a {
 .description h3 {
     font-size: 47px;
     line-height: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .description p {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .vendors {
@@ -343,7 +346,7 @@ a {
 
 .about-us h3 {
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .about-us p {
@@ -363,7 +366,7 @@ a {
 
 .contacts h3 {
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .contacts p {
@@ -400,7 +403,7 @@ a {
 .divice-address a {
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
     color: #ffc600;
     text-transform: uppercase;
 }
@@ -479,7 +482,7 @@ a {
     font-family: 'open_sanslight', sans-serif;
     font-size: 15px;
     line-height: 36px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
     color: #fff;
 
     opacity: 0.7;
@@ -565,7 +568,7 @@ a {
 
 .page-title {
     font-size: 47px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .breadcrumbs {
@@ -605,7 +608,7 @@ a {
 
 .filter legend {
     font-size: 18px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 }
 
 .color-selection,
@@ -613,7 +616,7 @@ a {
     font-family: 'Opne Sans', sans-serif;
     font-size: 14px;
     line-height: 40px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.001em;
 
     list-style: none;
 }
@@ -689,4 +692,94 @@ a {
 
 .pagination-list a:active {
     opacity: 1;
+}
+
+/* Разметка сеток */
+
+.main-header {
+    width: 1040px;
+    height: 186px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+
+.flex-header-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-search {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main-navigation {
+    width: 300px;
+    height: 10px;
+    padding: 0;
+}
+
+.user-functions-main {
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.user-functions-main li:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.user-functions-list li:nth-of-type(2) {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.user-functions-list {
+    width: 500px;
+    display: flex;
+}
+
+.item {
+    width: 1040px;
+    display: flex;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+
+.number {
+    position: absolute;
+}
+
+.item-flex {
+    flex-direction: column;
+    width: 500px;
+}
+
+.tagline {
+    margin-bottom: 40px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.item-flex .button {
+    display: block;
+    margin-bottom: 40px;
 }
