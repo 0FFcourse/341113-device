@@ -5,7 +5,7 @@
     <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://up.htmlacademy.ru/assets/htmlcss/demo/htmlcss18/grids/css/outline.css">-->
+    <!--<link rel="stylesheet" href="https://up.htmlacademy.ru/assets/htmlcss/demo/htmlcss18/grids/css/outline.css">-->
   </head>
 
   <body>
@@ -196,12 +196,12 @@
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы не плохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-        <div class="description">
+        <div class="description visually-hidden">
           <h3>Гарантия</h3>
           <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br>
           Товар, не дом, конечно же.</p>
         </div>
-        <div class="description">
+        <div class="description visually-hidden">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
@@ -249,34 +249,36 @@
     </main>
 
     <footer class="main-footer">
-      <div class="divice-address">
-        <a href="#">Device</a>
-        <p>г.Москва, ул. Строителей, 15</p>
-      </div>
-      <div class="social">
-        <ul class="add-services">
-          <li><a href="#">ДОСТАВКА</a></li>
-          <li><a href="#">ГАРАНТИЯ</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
-        </ul>
-        <a class="btn facebook" href="https://www.facebook.com/">Фейсбук</a>
-        <a class="btn instagram" href="https://www.instagram.com/">Инстаграм</a>
-        <a class="btn twitter" href="https://twitter.com/">Твиттер</a>
-      </div>
-      <div class="info">
-        <ul class="user-functions">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <a href="#">
-          <img src="img/logo-html.svg" alt="html Academy" width="27" height="35">
-        </a>
+      <div class="footer-flex">
+        <div class="divice-address">
+          <a href="#">Device</a>
+          <p>г.Москва, ул. Строителей, 15</p>
+        </div>
+        <div class="social">
+          <ul class="add-services">
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <a class="btn facebook" href="https://www.facebook.com/">Фейсбук</a>
+          <a class="btn instagram" href="https://www.instagram.com/">Инстаграм</a>
+          <a class="btn twitter" href="https://twitter.com/">Твиттер</a>
+        </div>
+        <div class="info">
+          <ul class="user-functions">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+          <a href="#">
+            <img src="img/logo-html.svg" alt="html Academy" width="27" height="35">
+          </a>
+        </div>
       </div>
     </footer>
 
-    <section class="modal map">
+    <section class="modal map visually-hidden">
       <h2 class="visually-hidden">Карта</h2>
       <p>
         <img src="img/map-big.png" alt="улица Строителей, 15" width="960" height="559">
@@ -284,7 +286,7 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal login">
+    <section class="modal login visually-hidden">
       <h2 class="visually-hidden">Форма ввода</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
         <p>

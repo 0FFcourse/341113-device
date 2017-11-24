@@ -150,6 +150,8 @@ a {
 
 .items {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .item p:nth-of-type(2) {
@@ -304,6 +306,8 @@ a {
 
 .vendors {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .vendor a {
@@ -754,11 +758,10 @@ a {
 }
 
 .item {
-    width: 1040px;
+    width: 1160px;
+    height: 594px;
     display: flex;
     margin: auto;
-    padding-left: 60px;
-    padding-right: 60px;
     justify-content: space-between;
 }
 
@@ -782,4 +785,91 @@ a {
 .item-flex .button {
     display: block;
     margin-bottom: 40px;
+}
+
+.sections {
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    padding: 0px;
+    margin: auto;
+}
+
+.section {
+    display: block;
+    width: 160px;
+}
+
+.services-for-the-client {
+    display: flex;
+    width: 1160px;
+    height: 288px;
+    margin: auto;
+}
+
+.services {
+    padding: 0px;
+    width: 280px;
+    margin-right: 120px;
+}
+
+.description {
+    width: 460px;
+}
+
+.vendors {
+    display: flex;
+    width: 1160px;
+    height: 290px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.vendor {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.more-info {
+    display: flex;
+    width: 1160px;
+    height: 650px;
+    margin: auto;
+}
+
+.about-us {
+    width: 50%;
+}
+
+.about-us p {
+    width: 480px;
+}
+
+.contacts {
+    padding-left: 20px;
+}
+
+.contacts p {
+    width: 560px;
+}
+
+.footer-flex {
+    display: flex;
+    width: 1160px;
+    height: 323px;
+    margin: auto;
+}
+
+.divice-address {
+    width: 200px;
+    margin-right: 160px;
+}
+
+.social {
+    width: 440px;
+}
+
+.info {
+    width: 300px;
+    margin-left: auto;
 }
