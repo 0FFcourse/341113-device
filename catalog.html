@@ -34,7 +34,7 @@
       </div>
       <div class="flex-heder">
         <ul class="user-functions-main">
-          <li>Валентин Петухов <a href="#" class='exit'>Выйти</a></li>
+          <li>Валентин Петухов<a href="#" class="exit">Выйти</a></li>
           <li><a href="compare.html">Сравнить</a></li>
           <li><a href="basket.html">Корзина</a></li>
         </ul>
@@ -67,19 +67,35 @@
               <a class="price" href="#">По цене</a>
               <a class="type" href="#">По типу</a>
               <a class="popularity" href="#">По популярности</a>
-              <a class="up">Лучшее в конце</a>
-              <a class="down" href="#">Сначала лудшее</a>
+              <div class="switches">
+                <a class="up">Лучшее в конце</a>
+                <a class="down" href="#">Сначала лудшее</a>
+              </div>
             </nav>
           </div>
         </div>
 
         <div class="main-content">
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+
+            <fieldset class="filter-item">
               <legend>Стоимость</legend>
-              <input type="range">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0%; width: 60%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="color-selections">
               <legend>Цвет</legend>
               <ul class="color-selection">
                 <li class="filter-option">
@@ -104,7 +120,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="bluetooth-switch">
               <legend>Bluetooth</legend>
               <ul class="bluetooth-on-off">
                 <li class="filter-option">
@@ -117,35 +133,43 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="button filter">Показать</button>
+            <button type="submit" class="button filter-button">Показать</button>
           </form>
         
           <div class="flex-column">
             <ul class="catalog-list">
               <li class="catalog-item">
-                <h3>Любительская селфи-палка</h3>
-                <p>500 руб.</p>
+                <div class="price">
+                  <h3>Любительская селфи-палка</h3>
+                  <p>500 руб.</p>
+                </div>
                 <a href="#">
                   <img src="img/item-1.png" alt="Любительская селфи-палка" width="360" height="380">
                 </a>
               </li>
               <li class="catalog-item">
-                <h3>Профессиональная селфи-палка</h3>
-                <p>1 500 руб.</p>
+                <div class="price">
+                  <h3>Профессиональная селфи-палка</h3>
+                  <p>1 500 руб.</p>
+                </div>
                 <a href="#">
                   <img src="img/item-2.png" alt="Профессиональная селфи-палка" width="360" height="380">
                 </a>
               </li>
               <li class="catalog-item">
-                <h3>Непотопляемая селфи-палка</h3>
-                <p>2 500 руб.</p>
+                <div class="price">
+                  <h3>Непотопляемая селфи-палка</h3>
+                  <p>2 500 руб.</p>
+                </div>
                 <a href="#">
                   <img src="img/item-3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
                 </a>
               </li>
               <li class="catalog-item new">
-                <h3>Селфи-палка «следуй за мной»</h3>
-                <p>2 500 руб.</p>
+                <div class="price">
+                  <h3>Селфи-палка «следуй за мной»</h3>
+                  <p>2 500 руб.</p>
+                </div>
                 <a href="#">
                   <img src="img/item-4.png" alt="Селфи-палка «следуй за мной»" width="360" height="380">
                 </a>
@@ -153,15 +177,13 @@
             </ul>
             
             <nav class="next-or-back">
+              <a class="back" href="#">назад</a>
               <ul class="pagination-list">
                 <li class="pagination-itme current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
               </ul>
-              <ul class="pagination-list next">
-                <li><a href="#">назад</a></li>
-                <li><a href="#">вперед</a></li>
-              </ul>
+              <a class="next" href="#">вперед</a>
             </nav>
           </div>
         </div>
@@ -173,7 +195,7 @@
       <div class="footer-flex">
         <div class="divice-address">
           <a href="#">Device</a>
-          <p>г.Москва, ул. Строителей, 15</p>
+          <p>г. Москва, ул. Строителей, 15</p>
         </div>
         <div class="social">
           <ul class="add-services">
@@ -191,7 +213,7 @@
             <li><a href="#">Сравнить</a></li>
             <li><a href="#">Корзина</a></li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <p>Тел.: +7 (495) 495-95-95 </p>
           <a href="#">
             <img src="img/logo-html.svg" alt="html Academy" width="27" height="35">
           </a>
