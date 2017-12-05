@@ -1323,12 +1323,15 @@ cursor: pointer;
 }
 
 .services-for-the-client {
+    background-color: #e5e5e5;
+}
+
+.wrapper-sevices {
     display: flex;
     width: 1160px;
     height: 288px;
-    margin: auto;
-    background-color: #e5e5e5;
     z-index: -1;
+    margin: auto;
 }
 
 .services {
