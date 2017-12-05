@@ -16,17 +16,14 @@
           <input type="search" name="search" placeholder="Поиск по сайту">
         </div>
         <ul class="main-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
-            <ul class="visually-hidden navigation">
+          <li class="drop-down-menu"><a href="catalog.html">Каталог товаров</a>
+            <ul class="navigation-menu">
               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="action-camera.html">Экшн-камеры</a></li>
-            </ul>
-            <ul class="visually-hidden navigation">
               <li><a href="fitness-bracelet.html">Фитнес-браслеты</a></li>
               <li><a href="smart-watch.html">Умные часы</a></li>
-            </ul>
-            <ul class="visually-hidden navigation">
+              <li><a href="smart-watch.html"></a></li>
               <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
             </ul>
           </li>
@@ -275,7 +272,7 @@
       </div>
     </footer>
 
-    <section class="modal map visually-hidden">
+    <section class="modal-map modal visually-hidden">
       <h2 class="visually-hidden">Карта</h2>
       <p>
         <img src="img/map-big.png" alt="улица Строителей, 15" width="960" height="559">
@@ -283,15 +280,19 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal login visually-hidden">
+    <section class="modal-login modal visually-hidden">
       <h2 class="visually-hidden">Форма ввода</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="appointment-name">Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-          <label for="appointment-e-mail">Ваш e-mail:</label>
-          <input id="appointment-e-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
-        </p>
+        <div class="wrapper">
+          <p>
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="appointment-e-mail">Ваш e-mail:</label>
+            <input id="appointment-e-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+          </p>
+        </div>
         <p>
           <label for="appointment-free-text">Текст письма:</label>
           <textarea id="appointment-free-text" name="free-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
