@@ -1420,6 +1420,7 @@ cursor: pointer;
 .flex-sort-background {
     width: 100%;
     display: flex;
+    background: #efefef;
 }
 
 .flex-sort-center {
@@ -1510,6 +1511,41 @@ cursor: pointer;
     display: flex;
     width: 832px;
     flex-direction: column;
+}
+
+.phontom-button {
+    position: relative;
+}
+
+.phontom-button::before {
+    content: '';
+    width: 27px;
+    height: 23px;
+    top: -3px;
+    left: -41px;
+    background-image: url('../img/checkbox-off.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#filter-black:checked ~ .phontom-button::before {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+#filter-white:checked ~ .phontom-button::before {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+#filter-blue:checked ~ .phontom-button::before {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+#filter-red:checked ~ .phontom-button::before {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+#filter-pink:checked ~ .phontom-button::before {
+    background-image: url('../img/checkbox-on.svg');
 }
 
 /* Модальные окна */
