@@ -15,8 +15,10 @@ var services_2_active = document.querySelector('.guarantee-button');
 var services_3_active = document.querySelector('.credit-button');
 var description_1 = document.querySelector('.description-delivery');
 var description_2 = document.querySelector('.description-guarantee');
-var description_3 = document.querySelector('.description-credit')
-
+var description_3 = document.querySelector('.description-credit');
+var open_map = document.querySelector('.open-map');
+var map = document.querySelector('.modal-map');
+var close_map = document.querySelector('.modal-map .modal-close');
 
 // Всплывающая форма
 button_modal.addEventListener('click', function (evt) {
@@ -26,6 +28,17 @@ button_modal.addEventListener('click', function (evt) {
 
 close.addEventListener('click', function () {
     popup.classList.add('visually-hidden');
+});
+
+
+//Всплывающая карта
+open_map.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    map.classList.remove('visually-hidden');
+});
+
+close_map.addEventListener('click', function () {
+    map.classList.add('visually-hidden');
 });
 
 

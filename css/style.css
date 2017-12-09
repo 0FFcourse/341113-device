@@ -1629,6 +1629,8 @@ cursor: pointer;
 
 .modal-map p {
     margin: 0;
+    background-image: url('../img/map-big.png');
+    background-repeat: no-repeat;
 }
 
 .modal-close {
