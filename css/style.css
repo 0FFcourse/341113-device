@@ -228,23 +228,6 @@ cursor: pointer;
     font-size: 0;
 }
 
-.slider-controls .active::before {
-    content: "";
-    
-    position: absolute;
-    left: 18px;
-    top: 18px;
-    z-index: 2;
-    
-    width: 2px;
-    height: 2px;
-    margin: -3px;
-    
-    background-color: inherit;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-
 .item p:nth-of-type(2) {
     font-size: 47px;
     line-height: 56px;
@@ -464,10 +447,22 @@ cursor: pointer;
     top: -72px;
 }
 
-.description img {
+.description-delivery img {
     position: absolute;
     right: -240px;
     top: -15px;
+}
+
+.description-guarantee img {
+    position: absolute;
+    right: -265px;
+    top: -40px;
+}
+
+.description-credit img {
+    position: absolute;
+    right: -240px;
+    top: -40px;
 }
 
 .vendors {
@@ -1262,6 +1257,23 @@ cursor: pointer;
     display: flex;
 }
 
+.slider-controls .active::before {
+    content: "";
+    
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    z-index: 2;
+    
+    width: 2px;
+    height: 2px;
+    margin: -3px;
+    
+    background-color: inherit;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
 .item:nth-of-type(1) img:nth-of-type(1) {
     height: 486px;
     margin-left: 90px;
@@ -1452,8 +1464,9 @@ cursor: pointer;
     flex-direction: column;
 }
 
-.catalog-item a {
+.catalog-item .add-item {
     order: 1;
+    position: relative;
 }
 
 .catalog-item .price {
@@ -1571,6 +1584,35 @@ cursor: pointer;
     background-image: url('../img/radio-on.svg');
 }
 
+.add-item:hover {
+    opacity: 0.7;
+}
+
+.item-hover {
+    position: absolute;
+    width: 360px;
+    height: 379px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-hover .take-item {
+    border: none;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    font-family: inherit;
+}
+
+.item-hover a {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 13px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Модальные окна */
 
 .modal {
@@ -1680,6 +1722,7 @@ cursor: pointer;
     border-style: none;
     background-color: #f2f2f2;
     box-sizing: border-box;
+    resize: none;
 }
 
 .appointment-form input[type='text']:hover,
