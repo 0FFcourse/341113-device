@@ -1513,11 +1513,11 @@ cursor: pointer;
     flex-direction: column;
 }
 
-.phontom-button {
+.phantom-button {
     position: relative;
 }
 
-.phontom-button::before {
+.phantom-button::before {
     content: '';
     width: 27px;
     height: 23px;
@@ -1528,24 +1528,47 @@ cursor: pointer;
     position: absolute;
 }
 
-#filter-black:checked ~ .phontom-button::before {
+#filter-black:checked ~ .phantom-button::before {
     background-image: url('../img/checkbox-on.svg');
 }
 
-#filter-white:checked ~ .phontom-button::before {
+#filter-white:checked ~ .phantom-button::before {
     background-image: url('../img/checkbox-on.svg');
 }
 
-#filter-blue:checked ~ .phontom-button::before {
+#filter-blue:checked ~ .phantom-button::before {
     background-image: url('../img/checkbox-on.svg');
 }
 
-#filter-red:checked ~ .phontom-button::before {
+#filter-red:checked ~ .phantom-button::before {
     background-image: url('../img/checkbox-on.svg');
 }
 
-#filter-pink:checked ~ .phontom-button::before {
+#filter-pink:checked ~ .phantom-button::before {
     background-image: url('../img/checkbox-on.svg');
+}
+
+.phantom-radio {
+    position: relative;
+}
+
+.phantom-radio::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    top: -4px;
+    left: -42px;
+    background-image: url('../img/radio-off.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#bluetooth-yes-id:checked ~ .phantom-radio::before {
+    background-image: url('../img/radio-on.svg');
+}
+
+#bluetooth-no-id:checked ~ .phantom-radio::before {
+    background-image: url('../img/radio-on.svg');
 }
 
 /* Модальные окна */
