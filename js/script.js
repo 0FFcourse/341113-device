@@ -19,6 +19,16 @@ var description_3 = document.querySelector('.description-credit');
 var open_map = document.querySelector('.open-map');
 var map = document.querySelector('.modal-map');
 var close_map = document.querySelector('.modal-map .modal-close');
+var open_nav = document.querySelector('.open-nav')
+var nav = document.querySelector('.navigation-menu')
+
+
+//Выподающее меню
+open_nav.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    nav.classList.toggle('visually-hidden');
+});
+
 
 // Всплывающая форма
 button_modal.addEventListener('click', function (evt) {

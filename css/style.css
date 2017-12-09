@@ -1613,6 +1613,30 @@ cursor: pointer;
     margin-right: auto;
 }
 
+.open-nav {
+    position: relative;
+}
+
+.open-nav::before {
+    content: '';
+    width: 2px;
+    height: 16px;
+    position: absolute;
+    background-color: #b8a974;
+    right: -21px;
+    top: 3px;
+}
+
+.open-nav::after {
+    content: '';
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    background-color: #b8a974;
+    right: -28px;
+    top: 10px;
+}
+
 /* Модальные окна */
 
 .modal {
