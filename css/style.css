@@ -148,7 +148,6 @@ img {
 
 .main-search input[type='search']:focus::placeholder {
     opacity: 1;
-    
 }
 
 .main-search input[type='search']:focus + .to-find {
@@ -194,14 +193,16 @@ img {
 
 .user-functions-main a:hover,
 .main-navigation a:hover,
-.navigation a:hover {
+.navigation a:hover,
+.user-functions-list a:hover {
     opacity: 0.6;
 }
 
 .user-functions-main a:active,
 .main-navigation a:active,
 .navigation a:active,
-.user-functions-main .exit {
+.user-functions-main .exit,
+.user-functions-list a:active {
     opacity: 0.3;
 }
 
@@ -1564,6 +1565,10 @@ cursor: pointer;
 
 .pagination-list a:hover {
     opacity: 0.6;
+}
+
+.current a {
+    opacity: 1;
 }
 
 .next-or-back .back {
