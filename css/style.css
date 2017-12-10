@@ -62,6 +62,37 @@ img {
     height: 0;
 }
 
+.to-find {
+    display: none;
+    position: absolute;
+    width: 85px;
+    height: 49px;
+    border: 2px solid #000;
+    background-color: transparent;
+    top: 33px;
+    right: -241px;
+    font-family: 'open_sanslight', Arial, sans-serif;
+}
+
+.to-find:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.to-find:active {
+    color: #4d4d4d;
+}
+
+.to-find::before {
+    content: '';
+    width: 356px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: -358px;
+    bottom: -2px;
+}
+
 .main-search a {
     position: relative;
     bottom: 15px;
@@ -85,7 +116,7 @@ img {
 
 .main-search input[type='search'] {
     font: inherit;
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.001em;
@@ -102,6 +133,10 @@ img {
     background-position: 3px 10px;;
 }
 
+.main-search input[type='search']:focus {
+    outline: none;
+}
+
 .main-search input[type='search']::placeholder {
     color: #000;
     opacity: 0.3;
@@ -113,7 +148,11 @@ img {
 
 .main-search input[type='search']:focus::placeholder {
     opacity: 1;
-    border-bottom: 2px solid #000;
+    
+}
+
+.main-search input[type='search']:focus + .to-find {
+    display: block;
 }
 
 .user-functions-main,
@@ -124,7 +163,7 @@ img {
 }
 
 .user-functions-main {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -139,7 +178,7 @@ img {
 }
 
 .navigation a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.001em;
@@ -247,7 +286,7 @@ cursor: pointer;
 }
 
 .item p:nth-of-type(3) {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -299,14 +338,14 @@ cursor: pointer;
 
 
 .characteristics tr:first-child {
-    font-family: 'Gilroy Light', sans-serif;
+    font-family: 'Gilroy Light', Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 0.001em;
 }
 
 .characteristics tr:last-child {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.001em;
@@ -372,7 +411,7 @@ cursor: pointer;
 }
 
 .services button {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     border: none;
     background: none;
 }
@@ -439,7 +478,7 @@ cursor: pointer;
 }
 
 .description p {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -531,7 +570,7 @@ cursor: pointer;
 }
 
 .about-us p {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -605,7 +644,7 @@ cursor: pointer;
 }
 
 .contacts p {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -674,7 +713,7 @@ cursor: pointer;
 }
 
 .divice-address p {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     padding: 0;
     margin-top: 20px;
@@ -783,7 +822,7 @@ cursor: pointer;
 }
 
 .user-functions a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.001em;
@@ -801,7 +840,7 @@ cursor: pointer;
 }
 
 .info p {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #fff;
@@ -857,7 +896,7 @@ cursor: pointer;
 }
 
 .breadcrumbs a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     color: #000;
     
     opacity: 0.3;
@@ -1008,7 +1047,7 @@ cursor: pointer;
 
 .color-selection,
 .bluetooth-on-off {
-    font-family: 'Opne Sans', sans-serif;
+    font-family: 'Opne Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.001em;
@@ -1048,7 +1087,7 @@ cursor: pointer;
 }
 
 .sorting a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     margin-right: 28px;
@@ -1062,6 +1101,10 @@ cursor: pointer;
 }
 
 .sorting a:active {
+    opacity: 1;
+}
+
+.sorting .active {
     opacity: 1;
 }
 
@@ -1103,16 +1146,6 @@ cursor: pointer;
 .pagination-list {
     font-size: 16px;
     color: #000;
-
-    opacity: 0.3;
-}
-
-.pagination-list a:hover {
-    opacity: 0.6;
-}
-
-.pagination-list a:active {
-    opacity: 1;
 }
 
 .pagination-list li:nth-of-type(2) {
@@ -1148,6 +1181,7 @@ cursor: pointer;
     height: 100px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .main-navigation {
@@ -1484,7 +1518,7 @@ cursor: pointer;
 }
 
 .price p {
-    font-family: 'Gilroy Light', sans-serif;
+    font-family: 'Gilroy Light', Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -1517,14 +1551,47 @@ cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 16px;
+    color: #000;
+}
+
+.next-or-back a:active {
+    color: #979797;
+}
+
+.pagination-list a {
+    opacity: 0.3;
+}
+
+.pagination-list a:hover {
+    opacity: 0.6;
 }
 
 .next-or-back .back {
-    margin-left: 30px;
+    width: 126px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #000;
+}
+
+.next-or-back .back:active {
+    color: #979797;
+}
+
+.next-or-back .back:hover {
+    background-color: #d9d9d9;
 }
 
 .next-or-back .next {
-    margin-right: 27px;
+    width: 137px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #000;
+}
+
+.next-or-back .next:hover {
+    background-color: #d9d9d9;
 }
 
 .flex-column {
@@ -1592,7 +1659,7 @@ cursor: pointer;
 }
 
 .item-hover a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 13px;
     margin-bottom: auto;
     margin-left: auto;
@@ -1755,7 +1822,7 @@ cursor: pointer;
     width: 360px;
     height: 50px;
     padding-left: 20px;
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     border-style: none;
@@ -1847,7 +1914,7 @@ cursor: pointer;
 }
 
 .navigation-menu a {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     letter-spacing: 0.01em;
     text-transform: none;
