@@ -1431,8 +1431,15 @@ cursor: pointer;
 
 .flex-sort-background {
     width: 100%;
-    display: flex;
+    overflow: hidden;
     background: #efefef;
+    background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 49%,#efefef 50%,#efefef 100%);
+}
+
+.wrap-background {
+    overflow: hidden;
+    background: #efefef;
+    background: linear-gradient(to right,#efefef 0%,#efefef 29%,#fff 30%,#fff 100%);
 }
 
 .flex-sort-center {
@@ -1584,11 +1591,27 @@ cursor: pointer;
     background-image: url('../img/radio-on.svg');
 }
 
-.add-item:hover {
-    opacity: 0.7;
+.item-hover a {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 13px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: black;
+    z-index: 1;
 }
 
+.add-item {
+    position: relative;
+} 
+
 .item-hover {
+    display: none;
+}
+
+.add-item:hover + .item-hover,
+.item-hover:hover {
     position: absolute;
     width: 360px;
     height: 379px;
@@ -1596,21 +1619,22 @@ cursor: pointer;
     flex-direction: column;
 }
 
+.add-item:hover + .item-hover::before,
+.item-hover:hover::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.7);
+    width: 360px;
+    height: 379px;
+}
+
 .item-hover .take-item {
     border: none;
     background: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 160px;
+    margin-top: 170px;
     font-family: inherit;
-}
-
-.item-hover a {
-    font-family: 'open_sanslight', sans-serif;
-    font-size: 13px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .open-nav {
