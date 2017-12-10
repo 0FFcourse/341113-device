@@ -1504,6 +1504,7 @@ cursor: pointer;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .catalog-item .add-item {
@@ -1731,6 +1732,25 @@ cursor: pointer;
     background-color: #b8a974;
     right: -28px;
     top: 10px;
+}
+
+.new {
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    background-color: rgba(205, 57, 68, 0);
+    opacity: 0.102;
+    width: 64px;
+    height: 65px;
+    right: 27px;
+    top: 29px;
+    z-index: 1;
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 65px;
 }
 
 /* Модальные окна */
